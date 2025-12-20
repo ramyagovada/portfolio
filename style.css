@@ -1,0 +1,470 @@
+/* =========================
+   GLOBAL RESET & BASE
+========================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f8fbff;
+  color: #222;
+  overflow-x: hidden;
+}
+
+/* =========================
+   COMMON SECTION STRUCTURE
+========================= */
+section {
+  width: 100%;
+  padding: 80px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+  min-height: 70px;
+  background: #1d4ed8;
+}
+
+.nav-link {
+  color: #fff !important;
+  padding-right: 20px;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #22c55e !important;
+  transform: scale(1.05);
+}
+
+/* =========================
+   EDUCATION SECTION
+========================= */
+#education {
+  background: linear-gradient(120deg, #af89ec, #b14fdf, #ae78e8);
+  color: #fff;
+  text-align: center;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.study {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  object-fit: cover;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.study:hover {
+  transform: translateY(-10px);
+}
+
+/* =========================
+   CARD DESIGN
+========================= */
+.card {
+  max-width: 320px;
+  margin: auto;
+  border-radius: 30px;
+  background: linear-gradient(120deg, #ffffff, #eef2f3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+/* =========================
+   GENERAL STYLING
+========================= */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+  color: #333;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  font-weight: 600;
+}
+
+/* =========================
+   SKILLS SECTION
+========================= */
+#skills {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  text-align: center;
+}
+
+#skills h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #4e4376;
+}
+
+#skills .subtitle {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 50px;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.skills-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  flex: 1 1 300px;
+  max-width: 420px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 40px rgba(0,0,0,0.15);
+}
+
+.skills-card h2 {
+  color: #4e4376;
+  margin-bottom: 25px;
+  font-size: 22px;
+  border-bottom: 2px solid #4e4376;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill span {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  background: #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  width: 0;
+  border-radius: 8px;
+  transition: width 1.5s ease;
+}
+
+/* Skill Colors */
+.html { background: #e44d26; }
+.css { background: #264de4; }
+.js { background: #f0db4f; }
+.bootstrap { background: #7952b3; }
+.wordpress { background: #21759b; }
+.figma { background: #a259ff; }
+.canva { background: #00c4cc; }
+.social { background: #ff6f61; }
+
+/* =========================
+   CONTACT SECTION
+========================= */
+.contact-section {
+  position: relative;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #445fd7, #269ad4);
+  color: #fff;
+  overflow: hidden;
+}
+
+#bgCanvas {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.contact-content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  color: #333;
+  padding: 50px;
+  border-radius: 24px;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.contact-content h1 {
+  color: #4e4376;
+  margin-bottom: 10px;
+}
+
+.contact-content .subtitle {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #4e4376;
+  box-shadow: 0 0 8px rgba(78,67,118,0.3);
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 15px;
+  background: #4e4376;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #2b5876;
+  transform: translateY(-3px);
+}
+/* =========================
+   TRENDY WHATSAPP FLOAT BUTTON
+========================= */
+.whatsapp-float {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 60px;
+  height: 60px;
+  background: #25D366;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  text-decoration: none;
+  box-shadow: 0 6px 15px rgba(37, 211, 102, 0.5), 0 10px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover effect: scale + glow + subtle bounce */
+.whatsapp-float:hover {
+  transform: scale(1.15) translateY(-2px);
+  box-shadow: 0 10px 25px rgba(37, 211, 102, 0.6), 0 15px 30px rgba(0, 0, 0, 0.2);
+  animation: bounce 0.6s;
+}
+
+/* Bounce animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: scale(1.15) translateY(-2px);
+  }
+  40% {
+    transform: scale(1.2) translateY(-6px);
+  }
+  60% {
+    transform: scale(1.18) translateY(-4px);
+  }
+}
+
+/* Pulse animation behind button */
+.whatsapp-float::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(37, 211, 102, 0.4);
+  animation: pulse 2.2s infinite;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.2;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+/* SVG icon smooth transition */
+.whatsapp-float svg {
+  transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.whatsapp-float:hover svg {
+  transform: scale(1.1);
+  fill: #fff;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 767px) {
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    right: 16px;
+    bottom: 16px;
+  }
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+.main-footer {
+  background: #111827;
+  color: #e5e7eb;
+  padding: 60px 20px 20px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.footer-brand h2 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.footer-links h3,
+.footer-contact h3 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.footer-links a,
+.footer-contact a {
+  color: #e5e7eb;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-contact a:hover {
+  color: #8b5cf6;
+}
+
+.footer-social {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-social a {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #1f2933;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.footer-social a.github:hover { background: #6e5494; }
+.footer-social a.linkedin:hover { background: #0a66c2; }
+.footer-social a.instagram:hover { background: #e1306c; }
+
+.footer-social a:hover { transform: translateY(-4px); }
+
+.footer-bottom {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 991px) {
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-content {
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  #skills h1 { font-size: 28px; }
+  .skills-card h2 { font-size: 20px; }
+}
+
